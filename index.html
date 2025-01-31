@@ -50,13 +50,23 @@
 </head>
 <body class="bg-gray-100">
     <!-- Language Selector -->
-    <div class="fixed top-2 right-2 z-50">
+    <style>
+        @media (max-width: 640px) {
+            .language-selector-mobile {
+                right: 1rem !important;
+                top: 1rem !important;
+                transform: scale(0.9);
+            }
+        }
+    </style>
+    <div class="fixed language-selector-mobile top-2 right-4 z-50">
         <select id="languageSelector" 
                 class="bg-white/90 shadow-lg border border-gray-300 rounded text-base px-2 py-1 pr-6 hover-zoom focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none cursor-pointer"
                 style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width=\"12\" height=\"12\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 5h6L6 9 3 5z\" fill=\"%23888\"/></svg>');
                        background-repeat: no-repeat;
                        background-position: right 0.5rem center;
-                       background-size: 12px;">
+                       background-size: 12px;
+                       max-width: 70px;">
             <option value="en">🇬🇧</option>
             <option value="de">🇩🇪</option>
         </select>
