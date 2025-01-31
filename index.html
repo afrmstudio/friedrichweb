@@ -69,22 +69,61 @@
 
     <!-- Biography Section -->
     <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Life and Work</h2>
-        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Leben und Werk</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center lang-en" data-aos="fade-up">Life and Work</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center lang-de hidden" data-aos="fade-up">Leben und Werk</h2>
         
-        <!-- Historical Portrait -->
-        <div class="max-w-md mx-auto mb-12" data-aos="fade-up">
-            <div class="bg-white p-4 rounded-lg shadow hover-zoom">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/FW_Raiffeisen.jpg" 
-                     alt="Friedrich Wilhelm Raiffeisen historical portrait" 
-                     class="w-full h-auto rounded"
-                     loading="lazy">
-                <div class="mt-4 text-center text-sm text-gray-600">
-                    <p class="lang-en">Historical portrait of Friedrich Wilhelm Raiffeisen, pioneer of the cooperative movement</p>
-                    <p class="lang-de hidden">Historisches Porträt von Friedrich Wilhelm Raiffeisen, Pionier der Genossenschaftsbewegung</p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Historical Portrait -->
+            <div class="lg:col-span-1" data-aos="fade-right">
+                <div class="bg-white p-4 rounded-lg shadow hover-zoom">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/FW_Raiffeisen.jpg" 
+                         alt="Friedrich Wilhelm Raiffeisen historical portrait" 
+                         class="w-full h-auto rounded"
+                         loading="lazy">
+                    <div class="mt-4 text-center text-sm text-gray-600">
+                        <p class="lang-en">Historical portrait of Friedrich Wilhelm Raiffeisen, pioneer of cooperative banking</p>
+                        <p class="lang-de hidden">Historisches Porträt von Friedrich Wilhelm Raiffeisen, Pionier des Genossenschaftsbankwesens</p>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <p class="text-sm font-semibold mb-2 lang-en">Key Facts</p>
+                        <p class="text-sm font-semibold mb-2 lang-de hidden">Wichtige Fakten</p>
+                        <ul class="text-sm space-y-2 text-gray-700">
+                            <li class="lang-en">Born: March 30, 1818 in Hamm (Sieg)</li>
+                            <li class="lang-de hidden">Geboren: 30. März 1818 in Hamm (Sieg)</li>
+                            <li class="lang-en">Died: March 11, 1888 in Heddesdorf</li>
+                            <li class="lang-de hidden">Gestorben: 11. März 1888 in Heddesdorf</li>
+                            <li class="lang-en">Occupation: Social Reformer, Mayor</li>
+                            <li class="lang-de hidden">Beruf: Sozialreformer, Bürgermeister</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Biography Text -->
+            <div class="lg:col-span-2 space-y-6" data-aos="fade-left">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4 lang-en">Early Life & Family</h3>
+                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Frühe Jahre & Familie</h3>
+                    <p class="lang-en">Born as the seventh of nine children, Friedrich Wilhelm Heinrich Raiffeisen grew up in modest circumstances. His father, Gottfried Friedrich Raiffeisen, served as mayor of Hamm, instilling in him a sense of civic duty. Despite financial hardships after his father's death in 1823, he received a solid education through the support of his mentors, particularly teacher Zschokke and Pastor Seippel.</p>
+                    <p class="lang-de hidden">Als siebtes von neun Kindern geboren, wuchs Friedrich Wilhelm Heinrich Raiffeisen in bescheidenen Verhältnissen auf. Sein Vater, Gottfried Friedrich Raiffeisen, war Bürgermeister von Hamm und prägte sein Verständnis für bürgerliche Pflichten. Trotz finanzieller Schwierigkeiten nach dem Tod seines Vaters 1823 erhielt er dank der Unterstützung seiner Mentoren, insbesondere Lehrer Zschokke und Pfarrer Seippel, eine solide Ausbildung.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4 lang-en">Vision and Achievement</h3>
+                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Vision und Leistung</h3>
+                    <p class="lang-en">Raiffeisen's experiences as mayor during the famine years of 1846-47 led him to develop his cooperative banking system. He recognized that individual prosperity was inseparable from community welfare. His innovative credit unions provided affordable loans to farmers and craftsmen, revolutionizing rural finance and establishing a model that would spread worldwide.</p>
+                    <p class="lang-de hidden">Raiffeisens Erfahrungen als Bürgermeister während der Hungerjahre 1846-47 führten zur Entwicklung seines genossenschaftlichen Banksystems. Er erkannte, dass individueller Wohlstand untrennbar mit dem Gemeinwohl verbunden war. Seine innovativen Kreditgenossenschaften ermöglichten Bauern und Handwerkern erschwingliche Kredite, revolutionierten die ländliche Finanzwirtschaft und etablierten ein Modell, das sich weltweit verbreiten sollte.</p>
+                    
+                    <div class="quote-box mt-6">
+                        <p class="text-lg lang-en">"The distress of the time can only be remedied by self-help in small, manageable circles."</p>
+                        <p class="text-lg lang-de hidden">"Der Not der Zeit kann nur durch Selbsthilfe in kleinen, überschaubaren Kreisen abgeholfen werden."</p>
+                        <p class="text-sm mt-2">- F.W. Raiffeisen</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-right">
@@ -134,6 +173,46 @@
                 <h3 class="text-xl font-bold mb-4 lang-de hidden">Sozialreform</h3>
                 <p class="lang-en">Through his work in Weyerbusch, Flammersfeld, and Heddesdorf, he developed practical solutions to rural poverty, creating models for cooperative self-help that continue to influence social enterprise today.</p>
                 <p class="lang-de hidden">Durch seine Arbeit in Weyerbusch, Flammersfeld und Heddesdorf entwickelte er praktische Lösungen gegen die ländliche Armut und schuf Modelle genossenschaftlicher Selbsthilfe, die bis heute soziales Unternehmertum beeinflussen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Documentary Section -->
+    <section class="container mx-auto px-4 py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Documentary: 200 Years of an Idea</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Dokumentation: 200 Jahre einer Idee</h2>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="aspect-w-16 aspect-h-9 mb-8 bg-white p-4 rounded-lg shadow" data-aos="fade-up">
+                <iframe 
+                    class="w-full h-96 rounded"
+                    src="https://www.youtube.com/embed/oTyzqME8JTg"
+                    title="200 Jahre Friedrich Wilhelm Raiffeisen - Die Kraft einer Idee"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-4 lang-en">Humanistic Approach</h3>
+                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Humanistischer Ansatz</h3>
+                    <p class="lang-en">Raiffeisen firmly believed that human beings should be at the center of all social and political actions. His vision was to improve the lives of people in poverty and dependency through cooperation and solidarity.</p>
+                    <p class="lang-de hidden">Raiffeisen glaubte fest daran, dass der Mensch im Mittelpunkt allen sozialen und politischen Handelns stehen muss. Seine Vision war es, das Leben von Menschen in Armut und Abhängigkeit durch Kooperation und Solidarität zu verbessern.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-4 lang-en">Crisis Response</h3>
+                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Krisenreaktion</h3>
+                    <p class="lang-en">In response to the mid-19th century famine, he founded the first "Butterbrotverein" (Bread Association), which included a bakery to provide bread to the community, demonstrating practical solutions to immediate needs.</p>
+                    <p class="lang-de hidden">Als Reaktion auf die Hungersnot Mitte des 19. Jahrhunderts gründete er den ersten "Butterbrotverein" mit einer Bäckerei zur Versorgung der Gemeinschaft und zeigte damit praktische Lösungen für unmittelbare Bedürfnisse.</p>
+                </div>
+            </div>
+
+            <div class="quote-box my-8" data-aos="fade-up">
+                <p class="text-xl lang-en">"Cooperatives can offer a viable alternative within the capitalist system, providing stability and promoting self-management."</p>
+                <p class="text-xl lang-de hidden">"Genossenschaften können eine tragfähige Alternative im kapitalistischen System bieten, die Stabilität gewährleistet und Selbstverwaltung fördert."</p>
             </div>
         </div>
     </section>
