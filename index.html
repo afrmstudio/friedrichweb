@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Wilhelm I - Memory Honor Site</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1200/600') center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #1a365d;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-zoom {
+            transition: transform 0.3s ease;
+        }
+        .hover-zoom:hover {
+            transform: scale(1.03);
+        }
+        .quote-box {
+            border-left: 4px solid #1a365d;
+            padding-left: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Language Selector -->
+    <div class="fixed top-4 right-4 z-50">
+        <select id="languageSelector" class="bg-white border border-gray-300 rounded px-3 py-1 hover-zoom">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+        </select>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4 lang-en" data-aos="fade-down">Friedrich Wilhelm I</h1>
+            <h1 class="text-5xl font-bold mb-4 lang-de hidden" data-aos="fade-down">Friedrich Wilhelm I</h1>
+            <p class="text-xl lang-en" data-aos="fade-up">The Soldier King of Prussia (1688-1740)</p>
+            <p class="text-xl lang-de hidden" data-aos="fade-up">Der Soldatenkönig von Preußen (1688-1740)</p>
+        </div>
+        <div class="scroll-indicator">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Biography</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Biographie</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-right">
+                <h3 class="text-xl font-bold mb-4 lang-en">Early Life</h3>
+                <h3 class="text-xl font-bold mb-4 lang-de hidden">Frühe Jahre</h3>
+                <p class="lang-en">Friedrich Wilhelm I was born on August 14, 1688, in Berlin to Friedrich I and Sophie Charlotte of Hanover. His early education focused on military and administrative matters, showing little interest in the arts and sciences that his mother favored. This practical orientation would later define his reign.</p>
+                <p class="lang-de hidden">Friedrich Wilhelm I. wurde am 14. August 1688 in Berlin als Sohn von Friedrich I. und Sophie Charlotte von Hannover geboren. Seine frühe Ausbildung konzentrierte sich auf militärische und administrative Angelegenheiten, wobei er wenig Interesse an den von seiner Mutter bevorzugten Künsten und Wissenschaften zeigte. Diese praktische Orientierung sollte später seine Regentschaft prägen.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-left">
+                <h3 class="text-xl font-bold mb-4 lang-en">Legacy</h3>
+                <h3 class="text-xl font-bold mb-4 lang-de hidden">Vermächtnis</h3>
+                <p class="lang-en">Known as the "Soldier King," Friedrich Wilhelm I transformed Prussia into a militaristic state and laid the foundation for its future as a European power. His reforms in administration and the military would prove crucial for Prussia's rise. His son, Frederick the Great, would build upon these foundations to establish Prussia as a major European power.</p>
+                <p class="lang-de hidden">Als "Soldatenkönig" bekannt, verwandelte Friedrich Wilhelm I. Preußen in einen militärischen Staat und legte den Grundstein für dessen Zukunft als europäische Macht. Seine Reformen in Verwaltung und Militär sollten sich für Preußens Aufstieg als entscheidend erweisen. Sein Sohn, Friedrich der Große, würde auf diesen Grundlagen aufbauen, um Preußen als europäische Großmacht zu etablieren.</p>
+            </div>
+        </div>
+
+        <div class="quote-box my-12" data-aos="fade-up">
+            <p class="text-xl lang-en">"A ruler must save his money, for it is in times of peace that one must prepare for war."</p>
+            <p class="text-xl lang-de hidden">"Ein Herrscher muss sein Geld sparen, denn in Friedenszeiten muss man sich auf den Krieg vorbereiten."</p>
+            <p class="text-sm mt-2">- Friedrich Wilhelm I</p>
+        </div>
+    </section>
+
+    <!-- Timeline Section with Hover Effects -->
+    <section class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Key Events</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Wichtige Ereignisse</h2>
+        
+        <div class="relative pl-8">
+            <div class="timeline-item relative pb-8 hover-zoom" data-aos="fade-left">
+                <h3 class="text-xl font-bold">1688</h3>
+                <p class="lang-en">Born in Berlin to Friedrich I and Sophie Charlotte of Hanover</p>
+                <p class="lang-de hidden">Geboren in Berlin als Sohn von Friedrich I. und Sophie Charlotte von Hannover</p>
+            </div>
+
+            <div class="timeline-item relative pb-8 hover-zoom" data-aos="fade-left" data-aos-delay="100">
+                <h3 class="text-xl font-bold">1713</h3>
+                <p class="lang-en">Ascends to the throne of Prussia, immediately begins military and administrative reforms</p>
+                <p class="lang-de hidden">Besteigt den preußischen Thron, beginnt sofort mit militärischen und administrativen Reformen</p>
+            </div>
+
+            <div class="timeline-item relative pb-8 hover-zoom" data-aos="fade-left" data-aos-delay="200">
+                <h3 class="text-xl font-bold">1723</h3>
+                <p class="lang-en">Establishes the General Directory, centralizing Prussian administration</p>
+                <p class="lang-de hidden">Gründet das Generaldirektorium und zentralisiert die preußische Verwaltung</p>
+            </div>
+
+            <div class="timeline-item relative pb-8 hover-zoom" data-aos="fade-left" data-aos-delay="300">
+                <h3 class="text-xl font-bold">1740</h3>
+                <p class="lang-en">Dies in Potsdam, leaving a transformed and militarily powerful Prussia</p>
+                <p class="lang-de hidden">Stirbt in Potsdam und hinterlässt ein transformiertes und militärisch starkes Preußen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Section with Interactive Elements -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Military and Administrative Reforms</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Militärische und Administrative Reformen</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-4 lang-en">Military</h3>
+                <h3 class="text-xl font-bold mb-4 lang-de hidden">Militär</h3>
+                <p class="lang-en">Created one of Europe's most disciplined armies, increasing it from 38,000 to 83,000 men. Introduced standardized training and equipment, establishing the foundation for Prussian military excellence.</p>
+                <p class="lang-de hidden">Schuf eine der diszipliniertesten Armeen Europas und vergrößerte sie von 38.000 auf 83.000 Mann. Führte standardisierte Ausbildung und Ausrüstung ein und legte damit den Grundstein für die preußische militärische Exzellenz.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-4 lang-en">Economy</h3>
+                <h3 class="text-xl font-bold mb-4 lang-de hidden">Wirtschaft</h3>
+                <p class="lang-en">Implemented strict financial policies, promoted industry and trade, and left a substantial treasury surplus. His economic reforms laid the groundwork for Prussia's industrial development.</p>
+                <p class="lang-de hidden">Führte strenge Finanzpolitik ein, förderte Industrie und Handel und hinterließ einen erheblichen Haushaltsüberschuss. Seine Wirtschaftsreformen legten den Grundstein für Preußens industrielle Entwicklung.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-4 lang-en">Administration</h3>
+                <h3 class="text-xl font-bold mb-4 lang-de hidden">Verwaltung</h3>
+                <p class="lang-en">Centralized government administration and established an efficient civil service. His reforms created a model of bureaucratic efficiency that influenced modern state administration.</p>
+                <p class="lang-de hidden">Zentralisierte die Staatsverwaltung und schuf einen effizienten öffentlichen Dienst. Seine Reformen schufen ein Modell bürokratischer Effizienz, das die moderne Staatsverwaltung beeinflusste.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="lang-en">In Memory of Friedrich Wilhelm I (1688-1740)</p>
+            <p class="lang-de hidden">Zum Gedenken an Friedrich Wilhelm I. (1688-1740)</p>
+            <div class="mt-4">
+                <a href="http://www.afrmstudio.it" target="_blank" class="text-sm text-gray-400 hover:text-white transition-colors">
+                    Designed by AFRM STUDIO
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Language switcher
+        document.getElementById('languageSelector').addEventListener('change', function(e) {
+            const language = e.target.value;
+            document.querySelectorAll('[class*="lang-"]').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.querySelectorAll('.lang-' + language).forEach(el => {
+                el.classList.remove('hidden');
+            });
+        });
+
+        // Intersection Observer for fade-in elements
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
