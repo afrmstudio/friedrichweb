@@ -49,47 +49,17 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <!-- Language Selector -->
-    <style>
-        @media (max-width: 640px) {
-            .language-selector-mobile {
-                position: absolute !important;
-                right: 1rem !important;
-                top: 1rem !important;
-                transform: scale(0.9);
-            }
-        }
-        #languageSelector {
-            font-family: "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Symbol", sans-serif;
-        }
-    </style>
-    <div class="fixed md:fixed language-selector-mobile top-4 right-4 z-50">
-        <select id="languageSelector" 
-                class="bg-white/90 shadow-lg border border-gray-300 rounded text-base px-2 py-1 pr-6 hover-zoom focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none cursor-pointer"
-                style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width=\"12\" height=\"12\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 5h6L6 9 3 5z\" fill=\"%23888\"/></svg>');
-                       background-repeat: no-repeat;
-                       background-position: right 0.5rem center;
-                       background-size: 12px;
-                       max-width: 70px;">
-            <option value="en">🇬🇧</option>
-            <option value="de">🇩🇪</option>
-        </select>
-    </div>
-
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
-            <h1 class="text-5xl font-bold mb-4 lang-en" data-aos="fade-down">Friedrich Wilhelm Raiffeisen</h1>
-            <h1 class="text-5xl font-bold mb-4 lang-de hidden" data-aos="fade-down">Friedrich Wilhelm Raiffeisen</h1>
-            <p class="text-xl lang-en" data-aos="fade-up">German Social Reformer and Cooperative Pioneer (1818-1888)</p>
-            <p class="text-xl lang-de hidden" data-aos="fade-up">Deutscher Sozialreformer und Genossenschaftspionier (1818-1888)</p>
+            <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">Friedrich Wilhelm Raiffeisen</h1>
+            <p class="text-xl" data-aos="fade-up">German Social Reformer and Cooperative Pioneer (1818-1888)</p>
         </div>
     </section>
 
     <!-- Biography Section -->
     <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-12 text-center lang-en" data-aos="fade-up">Life and Work</h2>
-        <h2 class="text-3xl font-bold mb-12 text-center lang-de hidden" data-aos="fade-up">Leben und Werk</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Life and Work</h2>
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Historical Portrait -->
@@ -100,20 +70,15 @@
                          class="w-full h-auto rounded"
                          loading="lazy">
                     <div class="mt-4 text-center text-sm text-gray-600">
-                        <p class="lang-en">Historical portrait of Friedrich Wilhelm Raiffeisen, pioneer of cooperative banking</p>
-                        <p class="lang-de hidden">Historisches Porträt von Friedrich Wilhelm Raiffeisen, Pionier des Genossenschaftsbankwesens</p>
+                        <p>Historical portrait of Friedrich Wilhelm Raiffeisen, pioneer of cooperative banking</p>
                     </div>
                     
                     <div class="mt-6 p-4 bg-blue-50 rounded-lg">
-                        <p class="text-sm font-semibold mb-2 lang-en">Key Facts</p>
-                        <p class="text-sm font-semibold mb-2 lang-de hidden">Wichtige Fakten</p>
+                        <p class="text-sm font-semibold mb-2">Key Facts</p>
                         <ul class="text-sm space-y-2 text-gray-700">
-                            <li class="lang-en">Born: March 30, 1818 in Hamm (Sieg)</li>
-                            <li class="lang-de hidden">Geboren: 30. März 1818 in Hamm (Sieg)</li>
-                            <li class="lang-en">Died: March 11, 1888 in Heddesdorf</li>
-                            <li class="lang-de hidden">Gestorben: 11. März 1888 in Heddesdorf</li>
-                            <li class="lang-en">Occupation: Social Reformer, Mayor</li>
-                            <li class="lang-de hidden">Beruf: Sozialreformer, Bürgermeister</li>
+                            <li>Born: March 30, 1818 in Hamm (Sieg)</li>
+                            <li>Died: March 11, 1888 in Heddesdorf</li>
+                            <li>Occupation: Social Reformer, Mayor</li>
                         </ul>
                     </div>
                 </div>
@@ -122,21 +87,16 @@
             <!-- Biography Text -->
             <div class="lg:col-span-2 space-y-6" data-aos="fade-left">
                 <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-bold mb-4 lang-en">Early Life & Family</h3>
-                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Frühe Jahre & Familie</h3>
-                    <p class="lang-en">Born as the seventh of nine children, Friedrich Wilhelm Heinrich Raiffeisen grew up in modest circumstances. His father, Gottfried Friedrich Raiffeisen, served as mayor of Hamm, instilling in him a sense of civic duty. Despite financial hardships after his father's death in 1823, he received a solid education through the support of his mentors, particularly teacher Zschokke and Pastor Seippel.</p>
-                    <p class="lang-de hidden">Als siebtes von neun Kindern geboren, wuchs Friedrich Wilhelm Heinrich Raiffeisen in bescheidenen Verhältnissen auf. Sein Vater, Gottfried Friedrich Raiffeisen, war Bürgermeister von Hamm und prägte sein Verständnis für bürgerliche Pflichten. Trotz finanzieller Schwierigkeiten nach dem Tod seines Vaters 1823 erhielt er dank der Unterstützung seiner Mentoren, insbesondere Lehrer Zschokke und Pfarrer Seippel, eine solide Ausbildung.</p>
+                    <h3 class="text-xl font-bold mb-4">Early Life & Family</h3>
+                    <p>Born as the seventh of nine children, Friedrich Wilhelm Heinrich Raiffeisen grew up in modest circumstances. His father, Gottfried Friedrich Raiffeisen, served as mayor of Hamm, instilling in him a sense of civic duty. Despite financial hardships after his father's death in 1823, he received a solid education through the support of his mentors, particularly teacher Zschokke and Pastor Seippel.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-bold mb-4 lang-en">Vision and Achievement</h3>
-                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Vision und Leistung</h3>
-                    <p class="lang-en">Raiffeisen's experiences as mayor during the famine years of 1846-47 led him to develop his cooperative banking system. He recognized that individual prosperity was inseparable from community welfare. His innovative credit unions provided affordable loans to farmers and craftsmen, revolutionizing rural finance and establishing a model that would spread worldwide.</p>
-                    <p class="lang-de hidden">Raiffeisens Erfahrungen als Bürgermeister während der Hungerjahre 1846-47 führten zur Entwicklung seines genossenschaftlichen Banksystems. Er erkannte, dass individueller Wohlstand untrennbar mit dem Gemeinwohl verbunden war. Seine innovativen Kreditgenossenschaften ermöglichten Bauern und Handwerkern erschwingliche Kredite, revolutionierten die ländliche Finanzwirtschaft und etablierten ein Modell, das sich weltweit verbreiten sollte.</p>
+                    <h3 class="text-xl font-bold mb-4">Vision and Achievement</h3>
+                    <p>Raiffeisen's experiences as mayor during the famine years of 1846-47 led him to develop his cooperative banking system. He recognized that individual prosperity was inseparable from community welfare. His innovative credit unions provided affordable loans to farmers and craftsmen, revolutionizing rural finance and establishing a model that would spread worldwide.</p>
                     
                     <div class="quote-box mt-6">
-                        <p class="text-lg lang-en">"The distress of the time can only be remedied by self-help in small, manageable circles."</p>
-                        <p class="text-lg lang-de hidden">"Der Not der Zeit kann nur durch Selbsthilfe in kleinen, überschaubaren Kreisen abgeholfen werden."</p>
+                        <p class="text-lg">"The distress of the time can only be remedied by self-help in small, manageable circles."</p>
                         <p class="text-sm mt-2">- F.W. Raiffeisen</p>
                     </div>
                 </div>
@@ -144,62 +104,31 @@
         </div>
     </section>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-right">
-                <h3 class="text-xl font-bold mb-4 lang-en">Early Life & Family</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Frühe Jahre & Familie</h3>
-                <p class="lang-en">Born on March 30, 1818, in Hamm (Sieg), Friedrich Wilhelm Heinrich Raiffeisen was the seventh of nine children. His father Gottfried Friedrich Raiffeisen was a farmer and village mayor. Despite financial hardships after his father's death in 1823, he received education from teacher Zschokke and Pastor Seippel, who significantly influenced his development.</p>
-                <p class="lang-de hidden">Geboren am 30. März 1818 in Hamm (Sieg) war Friedrich Wilhelm Heinrich Raiffeisen das siebte von neun Kindern. Sein Vater Gottfried Friedrich Raiffeisen war Landwirt und Dorfbürgermeister. Trotz finanzieller Schwierigkeiten nach dem Tod seines Vaters 1823 erhielt er Bildung von Lehrer Zschokke und Pfarrer Seippel, die seine Entwicklung maßgeblich beeinflussten.</p>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-left">
-                <h3 class="text-xl font-bold mb-4 lang-en">Military and Early Career</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Militär und frühe Karriere</h3>
-                <p class="lang-en">Initially pursuing a military career in Koblenz, he had to leave due to eye problems. He then entered civil service, becoming mayor of Weyerbusch at age 27, and later serving as mayor of Flammersfeld and Heddesdorf. During the famine of 1846-47, he organized bread distribution and founded the "Verein für Selbstbeschaffung von Brod und Früchten".</p>
-                <p class="lang-de hidden">Nach einer zunächst militärischen Laufbahn in Koblenz musste er diese wegen Augenproblemen aufgeben. Er trat in den Staatsdienst ein, wurde mit 27 Jahren Bürgermeister von Weyerbusch und später von Flammersfeld und Heddesdorf. Während der Hungersnot 1846-47 organisierte er Brotverteilungen und gründete den "Verein für Selbstbeschaffung von Brod und Früchten".</p>
-            </div>
-        </div>
-
-        <div class="quote-box my-12" data-aos="fade-up">
-            <p class="text-xl lang-en">"The cooperatives are in the first place not a business enterprise, but serve the welfare of their members."</p>
-            <p class="text-xl lang-de hidden">"Die Genossenschaften sind in erster Linie nicht ein geschäftliches Unternehmen, sondern dienen dem Wohle ihrer Mitglieder."</p>
-            <p class="text-sm mt-2">- F.W. Raiffeisen</p>
-        </div>
-    </section>
-
     <!-- Achievements Section -->
     <section class="container mx-auto px-4 py-16 bg-white">
-        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Major Achievements</h2>
-        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Wichtige Errungenschaften</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Major Achievements</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up">
-                <h3 class="text-xl font-bold mb-4 lang-en">Cooperative Banking Pioneer</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Pionier des Genossenschaftswesens</h3>
-                <p class="lang-en">Founded the Heddesdorfer Darlehnskassenverein in 1864, establishing the foundation for modern cooperative banking. His system was based on the principles of self-help, self-governance, and self-responsibility.</p>
-                <p class="lang-de hidden">Gründete 1864 den Heddesdorfer Darlehnskassenverein und legte damit den Grundstein für das moderne Genossenschaftsbankwesen. Sein System basierte auf den Prinzipien der Selbsthilfe, Selbstverwaltung und Selbstverantwortung.</p>
+                <h3 class="text-xl font-bold mb-4">Cooperative Banking Pioneer</h3>
+                <p>Founded the Heddesdorfer Darlehnskassenverein in 1864, establishing the foundation for modern cooperative banking. His system was based on the principles of self-help, self-governance, and self-responsibility.</p>
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up">
-                <h3 class="text-xl font-bold mb-4 lang-en">Literary Works</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Literarische Werke</h3>
-                <p class="lang-en">Published "Die Darlehnskassen-Vereine" in 1866, outlining his cooperative principles. This work became fundamental to the cooperative movement worldwide and was translated into multiple languages.</p>
-                <p class="lang-de hidden">Veröffentlichte 1866 "Die Darlehnskassen-Vereine", in dem er seine Genossenschaftsprinzipien darlegte. Dieses Werk wurde grundlegend für die weltweite Genossenschaftsbewegung und in mehrere Sprachen übersetzt.</p>
+                <h3 class="text-xl font-bold mb-4">Literary Works</h3>
+                <p>Published "Die Darlehnskassen-Vereine" in 1866, outlining his cooperative principles. This work became fundamental to the cooperative movement worldwide and was translated into multiple languages.</p>
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up">
-                <h3 class="text-xl font-bold mb-4 lang-en">Social Reform</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Sozialreform</h3>
-                <p class="lang-en">Through his work in Weyerbusch, Flammersfeld, and Heddesdorf, he developed practical solutions to rural poverty, creating models for cooperative self-help that continue to influence social enterprise today.</p>
-                <p class="lang-de hidden">Durch seine Arbeit in Weyerbusch, Flammersfeld und Heddesdorf entwickelte er praktische Lösungen gegen die ländliche Armut und schuf Modelle genossenschaftlicher Selbsthilfe, die bis heute soziales Unternehmertum beeinflussen.</p>
+                <h3 class="text-xl font-bold mb-4">Social Reform</h3>
+                <p>Through his work in Weyerbusch, Flammersfeld, and Heddesdorf, he developed practical solutions to rural poverty, creating models for cooperative self-help that continue to influence social enterprise today.</p>
             </div>
         </div>
     </section>
 
     <!-- Video Documentary Section -->
     <section class="container mx-auto px-4 py-16 bg-gray-50">
-        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Documentary: 200 Years of an Idea</h2>
-        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Dokumentation: 200 Jahre einer Idee</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Documentary: 200 Years of an Idea</h2>
 
         <div class="max-w-4xl mx-auto">
             <div class="aspect-w-16 aspect-h-9 mb-8 bg-white p-4 rounded-lg shadow" data-aos="fade-up">
@@ -215,53 +144,42 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                 <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-right">
-                    <h3 class="text-xl font-bold mb-4 lang-en">Humanistic Approach</h3>
-                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Humanistischer Ansatz</h3>
-                    <p class="lang-en">Raiffeisen firmly believed that human beings should be at the center of all social and political actions. His vision was to improve the lives of people in poverty and dependency through cooperation and solidarity.</p>
-                    <p class="lang-de hidden">Raiffeisen glaubte fest daran, dass der Mensch im Mittelpunkt allen sozialen und politischen Handelns stehen muss. Seine Vision war es, das Leben von Menschen in Armut und Abhängigkeit durch Kooperation und Solidarität zu verbessern.</p>
+                    <h3 class="text-xl font-bold mb-4">Humanistic Approach</h3>
+                    <p>Raiffeisen firmly believed that human beings should be at the center of all social and political actions. His vision was to improve the lives of people in poverty and dependency through cooperation and solidarity.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-left">
-                    <h3 class="text-xl font-bold mb-4 lang-en">Crisis Response</h3>
-                    <h3 class="text-xl font-bold mb-4 lang-de hidden">Krisenreaktion</h3>
-                    <p class="lang-en">In response to the mid-19th century famine, he founded the first "Butterbrotverein" (Bread Association), which included a bakery to provide bread to the community, demonstrating practical solutions to immediate needs.</p>
-                    <p class="lang-de hidden">Als Reaktion auf die Hungersnot Mitte des 19. Jahrhunderts gründete er den ersten "Butterbrotverein" mit einer Bäckerei zur Versorgung der Gemeinschaft und zeigte damit praktische Lösungen für unmittelbare Bedürfnisse.</p>
+                    <h3 class="text-xl font-bold mb-4">Crisis Response</h3>
+                    <p>In response to the mid-19th century famine, he founded the first "Butterbrotverein" (Bread Association), which included a bakery to provide bread to the community, demonstrating practical solutions to immediate needs.</p>
                 </div>
             </div>
 
             <div class="quote-box my-8" data-aos="fade-up">
-                <p class="text-xl lang-en">"Cooperatives can offer a viable alternative within the capitalist system, providing stability and promoting self-management."</p>
-                <p class="text-xl lang-de hidden">"Genossenschaften können eine tragfähige Alternative im kapitalistischen System bieten, die Stabilität gewährleistet und Selbstverwaltung fördert."</p>
+                <p class="text-xl">"Cooperatives can offer a viable alternative within the capitalist system, providing stability and promoting self-management."</p>
             </div>
         </div>
     </section>
 
     <!-- Legacy Section -->
     <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-8 text-center lang-en" data-aos="fade-up">Lasting Legacy</h2>
-        <h2 class="text-3xl font-bold mb-8 text-center lang-de hidden" data-aos="fade-up">Bleibendes Erbe</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Lasting Legacy</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up">
-                <h3 class="text-xl font-bold mb-4 lang-en">Global Impact</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Globale Wirkung</h3>
-                <p class="lang-en">The Raiffeisen principles have spread worldwide, with cooperative banks bearing his name operating across Europe. His ideas influenced the development of agricultural credit cooperatives globally, particularly in developing nations.</p>
-                <p class="lang-de hidden">Die Raiffeisen-Prinzipien haben sich weltweit verbreitet, mit Genossenschaftsbanken seines Namens in ganz Europa. Seine Ideen beeinflussten die Entwicklung landwirtschaftlicher Kreditgenossenschaften global, besonders in Entwicklungsländern.</p>
+                <h3 class="text-xl font-bold mb-4">Global Impact</h3>
+                <p>The Raiffeisen principles have spread worldwide, with cooperative banks bearing his name operating across Europe. His ideas influenced the development of agricultural credit cooperatives globally, particularly in developing nations.</p>
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow hover-zoom" data-aos="fade-up">
-                <h3 class="text-xl font-bold mb-4 lang-en">Modern Relevance</h3>
-                <h3 class="text-xl font-bold mb-4 lang-de hidden">Moderne Relevanz</h3>
-                <p class="lang-en">His cooperative model continues to inspire modern ethical banking initiatives. The combination of economic efficiency with social responsibility that he advocated remains highly relevant in today's discussions about sustainable finance.</p>
-                <p class="lang-de hidden">Sein Genossenschaftsmodell inspiriert weiterhin moderne ethische Bankinitiativen. Die von ihm vertretene Verbindung von wirtschaftlicher Effizienz mit sozialer Verantwortung bleibt hochaktuell in heutigen Diskussionen über nachhaltige Finanzen.</p>
+                <h3 class="text-xl font-bold mb-4">Modern Relevance</h3>
+                <p>His cooperative model continues to inspire modern ethical banking initiatives. The combination of economic efficiency with social responsibility that he advocated remains highly relevant in today's discussions about sustainable finance.</p>
             </div>
         </div>
     </section>
 
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <p class="lang-en">In Memory of Friedrich Wilhelm Raiffeisen (1818-1888)</p>
-            <p class="lang-de hidden">Zum Gedenken an Friedrich Wilhelm Raiffeisen (1818-1888)</p>
+            <p>In Memory of Friedrich Wilhelm Raiffeisen (1818-1888)</p>
             <div class="mt-4">
                 <a href="http://www.afrmstudio.it" target="_blank" class="text-sm text-gray-400 hover:text-white transition-colors">
                     Designed by AFRM STUDIO
@@ -276,17 +194,6 @@
         AOS.init({
             duration: 1000,
             once: true
-        });
-
-        // Language switcher
-        document.getElementById('languageSelector').addEventListener('change', function(e) {
-            const language = e.target.value;
-            document.querySelectorAll('[class*="lang-"]').forEach(el => {
-                el.classList.add('hidden');
-            });
-            document.querySelectorAll('.lang-' + language).forEach(el => {
-                el.classList.remove('hidden');
-            });
         });
     </script>
 </body>
