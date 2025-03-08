@@ -17,34 +17,17 @@
             justify-content: center;
             color: white;
         }
-    </style>
-    
-    <!-- Non-critical CSS with media query -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    </noscript>
-    
-    <!-- Preload hero image -->
-    <link rel="preload" as="image" href="img/header.jpg" fetchpriority="high">
-    
-    <!-- Apply hero background after load -->
-    <script>
-        window.addEventListener('load', function() {
-            document.querySelector('.hero-section').style.backgroundImage = 
-                'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/header.jpg")';
-            document.querySelector('.hero-section').style.backgroundSize = 'cover';
-            document.querySelector('.hero-section').style.backgroundPosition = 'center';
-        });
-    </script>
-    
-    <!-- Defer non-critical CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
-          rel="stylesheet" media="print" 
-          onload="this.media='all'">
-    
-    <!-- Additional styles -->
-    <style>
+        
+        /* Sponsor section styles */
+        .sponsor-logo {
+            filter: grayscale(20%);
+            transition: all 0.3s ease;
+        }
+        .sponsor-logo:hover {
+            filter: grayscale(0%);
+            transform: translateY(-3px);
+        }
+        
         /* Non-critical animations */
         @media (prefers-reduced-motion: no-preference) {
             .sponsor-logo {
@@ -77,7 +60,30 @@
             font-style: italic;
         }
     </style>
-</head>
+    
+    <!-- Non-critical CSS with media query -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    </noscript>
+    
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="img/header.jpg" fetchpriority="high">
+    
+    <!-- Apply hero background after load -->
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelector('.hero-section').style.backgroundImage = 
+                'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/header.jpg")';
+            document.querySelector('.hero-section').style.backgroundSize = 'cover';
+            document.querySelector('.hero-section').style.backgroundPosition = 'center';
+        });
+    </script>
+    
+    <!-- Defer non-critical CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
+          rel="stylesheet" media="print" 
+          onload="this.media='all'">
 </head>
 <body class="bg-gray-100">
     <!-- Hero Section -->
@@ -238,9 +244,13 @@
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <p>In Memory of Friedrich Wilhelm Raiffeisen (1818-1888)</p>
-            <div class="mt-4">
+            <div class="mt-4 flex flex-wrap justify-center gap-4">
                 <a href="http://www.afrmstudio.it" target="_blank" class="text-sm text-gray-400 hover:text-white transition-colors">
                     Designed by AFRM STUDIO
+                </a>
+                <span class="text-gray-500">|</span>
+                <a href="impressum.html" class="text-sm text-gray-400 hover:text-white transition-colors">
+                    Impressum
                 </a>
             </div>
         </div>
